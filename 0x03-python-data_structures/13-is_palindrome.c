@@ -13,7 +13,7 @@ int is_palindrome(listint_t **head)
 	listint_t *pal;
 	listint_t *tmp = *head;
 
-	if ((!*head) && !((*head)->next))
+	if (!(*head) || !((*head)->next))
 		return (1);
 	while (1)
 	{
@@ -36,7 +36,7 @@ int is_palindrome(listint_t **head)
 		else
 			return (0);
 	}
-	if (!tmp)
+	if (!tmp && !pal)
 		return (1);
 	return (0);
 }
