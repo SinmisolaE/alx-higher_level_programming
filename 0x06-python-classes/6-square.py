@@ -37,15 +37,14 @@ class Square:
     @position.setter
     def position(self, value):
         """Passing tuple into the position but also considering exceptoons"""
+        self.__position = value
         if (
                 not isinstance(value, tuple)
                 or not all(isinstance(n, int) for n in value)
                 or not all(x >= 0 for x in value)
                 or (len(value) != 2)
                 ):
-            raise TypeError("position must be a tuple of \
-                    2 positive integers")
-        self.__position = (value[0], value[1])
+            raise TypeError("position must be a tuple of 2 positive integers")
         return self.__position
 
     def my_print(self):
