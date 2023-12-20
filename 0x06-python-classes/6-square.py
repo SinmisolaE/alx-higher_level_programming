@@ -42,7 +42,7 @@ class Square:
                 not all(x >= 0 for x in value) or (len(value) != 2)):
             raise TypeError("position must be a tuple of \
                     2 positive integers")
-        self.__position = value
+        self.__position = (value[0], value[1])
         return self.__position
 
     def my_print(self):
