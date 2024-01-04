@@ -5,10 +5,9 @@
 
 class Rectangle:
     """ Representing a Rectangle"""
-    
-      def __init__(self, width=0, height=0):
-        """ Initializing attributes """
 
+    def __init__(self, width=0, height=0):
+        """ Initializing attributes """
         self.height = height
         self.width = width
 
@@ -41,3 +40,14 @@ class Rectangle:
             raise ValueError("width must be >= 0")
         self.__width = value
         return (self.__width)
+
+    def area(self):
+        """ Returns area of the rectangle """
+        return (self.__width * self.__height)
+
+    def perimeter(self):
+        """ Returns perimeter of rectangle
+        but if any side is 0, perimeter is 0"""
+        if self.__width == 0 or self.__height == 0:
+            return 0
+        return (2 * (self.__width + self.__height))
