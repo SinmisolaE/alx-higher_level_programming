@@ -71,6 +71,7 @@ class Rectangle:
     def square(cls, size=0):
         """ Class method that returns a new Rectangle instance """
         return(cls(size, size))
+
     def __str__(self):
         """ Returns the printable representation of class Rectangle """
         if self.__width == 0 or self.__height == 0:
