@@ -5,10 +5,9 @@
 
 class Rectangle:
     """ Representing a Rectangle"""
-    
-      def __init__(self, width=0, height=0):
-        """ Initializing attributes """
 
+    def __init__(self, width=0, height=0):
+        """ Initializing attributes """
         self.height = height
         self.width = width
 
