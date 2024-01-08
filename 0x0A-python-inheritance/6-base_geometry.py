@@ -7,4 +7,4 @@ class BaseGeometry:
     def area(self):
         """ Area method that raises error if no message passes into self """
         if not vars(self):
-            raise Exception("area() is not implementated")
+            raise Exception("area() is not implemented")
