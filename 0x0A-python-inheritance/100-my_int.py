@@ -15,4 +15,3 @@ class MyInt(int):
     def __ne__(self, other):
         """ method for non equal """
         return int(self) == other
-
