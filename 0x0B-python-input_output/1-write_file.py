@@ -6,4 +6,4 @@
 def write_file(filename="", text=""):
     """ writes text into a file """
     with open(filename, 'w', encoding='UTF8') as f:
-        return(f.write(text))
+        return (f.write(text))
