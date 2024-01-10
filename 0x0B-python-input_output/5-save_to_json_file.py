@@ -8,4 +8,3 @@ def save_to_json_file(my_obj, filename=""):
     with open(filename, 'a', encoding='UTF8') as f:
         string = json.dumps(my_obj)
         f.write(string)
-
