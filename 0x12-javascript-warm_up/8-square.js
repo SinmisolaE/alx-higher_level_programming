@@ -6,7 +6,8 @@ let i = 0;
 if (isNaN(x) || x === undefined) {
   console.log('Missing size');
 } else {
-  while (i < Number(x)) {
+  x = Number(x);
+  while (i < (x)) {
     console.log('X'.repeat(x));
     i++;
   }
