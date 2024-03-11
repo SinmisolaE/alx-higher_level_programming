@@ -2,9 +2,10 @@
 
 function factorial(x)
 {
-	if (isNaN(x) || x === undefined)
+	if (isNaN(x) || x === 0) {
 		return (1);
+	}
 	return (x * factorial(x - 1));
 }
 
-factorial(process.argv[1]);
+console.log(factorial(Number(process.argv[2])));
