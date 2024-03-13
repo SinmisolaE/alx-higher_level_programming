@@ -7,8 +7,8 @@ class Square extends Square {
     if (c === undefined) {
       c = 'X';
     }
-    for (let i = 0; i < super(size); i++) {
-      console.log(c.repeat(super(size)));
+    for (let i = 0; i < this.height; i++) {
+      console.log(c.repeat(this.width)));
     }
 }
 module.exports = Square;

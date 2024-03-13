@@ -2,10 +2,11 @@
 
 class Rectangle {
   constructor (w, h) {
-    if (w !== 0 && h !== 0 && w !< 0 && h !< 0) {
+    if ((w > 0) && (h > 0)) {
       this.width = w;
       this.height = h;
     }
+  }
 
   print() {
     for (let i = 0; i < h; i++) {
@@ -14,7 +15,7 @@ class Rectangle {
   }
 
   rotate() {
-    let c = this.width;
+    const c = this.width;
     this.width = this.height;
     this.height = c;
   }

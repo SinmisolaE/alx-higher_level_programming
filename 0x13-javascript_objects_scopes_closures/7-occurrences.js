@@ -7,4 +7,5 @@ exports.nbOccurrences = function (list, searchElement) {
       count++;
     }
   }
-}
+  return count;
+};
