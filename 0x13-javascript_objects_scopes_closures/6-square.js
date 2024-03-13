@@ -11,3 +11,4 @@ class Square extends Square {
       console.log(c.repeat(super(size)));
     }
 }
+module.exports = Square;
