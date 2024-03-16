@@ -14,6 +14,6 @@ class State(Base):
         unique integer, can't be null, primary key
         class attribute name: contain name(max 128 char)
         """
-    __table_name__ = 'states'
+    __tablename__ = 'states'
     id = Column(Integer, unique=True, nullable=Flase, primary_key=True)
     name = Column(String(128), nullable=False)
