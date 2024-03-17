@@ -3,6 +3,7 @@
     """
 from model_state import Base
 form sqlalchemy import Column, Integer, String, ForeignKey
+from sqlalchemy.ext.declarative import declararive_base
 
 
 class City(Base):
