@@ -3,7 +3,7 @@
 
 import sys
 from model_state import Base, State
-from sqlalchemy import (creat_ engine)
+from sqlalchemy import (creat_engine)
 from sqlalchemy.orm import sessionmaker
 
 
