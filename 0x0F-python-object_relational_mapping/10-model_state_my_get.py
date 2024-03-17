@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """ lists all State objects with name passed as argument
-    should display the states.id"""
+    should display the states.id
+    """
 import sys
 from models_state import Base, State
 from sqlalchemy import (create_engine)
