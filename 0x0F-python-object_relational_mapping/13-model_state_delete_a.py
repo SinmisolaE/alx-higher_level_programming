@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """ deletes all States objects with a name containing letter 'a'"""
 import sys
-from models_state import Base, State
+from model_state import Base, State
 from sqlalchemy import (create_engine)
 from sqlalchemy.orm import sessionmaker
 
