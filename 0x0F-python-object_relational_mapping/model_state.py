@@ -13,7 +13,7 @@ class State(Base):
         class attribute id: auto generated,
         unique integer, can't be null, primary key
         class attribute name: contain name(max 128 char)
-        """
+    """
     __tablename__ = 'states'
     id = Column(Integer, unique=True, nullable=Flase, primary_key=True)
     name = Column(String(128), nullable=False)
