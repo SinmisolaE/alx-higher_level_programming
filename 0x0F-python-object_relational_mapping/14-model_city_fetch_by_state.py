@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """ prints all City objects from database 'hbtn_0e_14_usa'
     display '<state name>: <city id> <city name>'
-    """
+"""
 import sys
 from sqlalchemy import (create_engine)
 from sqlalchemy.orm import sessionmaker
