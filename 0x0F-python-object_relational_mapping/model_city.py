@@ -4,6 +4,9 @@ from model_state import Base
 from sqlalchemy import Column, Integer, String, ForeignKey
 from sqlalchemy.ext.declarative import declarative_base
 
+mymetadata = MetaData()
+Base = declarative_base(metadata=mymetadata)
+
 
 class City(Base):
     """ class City inherits from Base
