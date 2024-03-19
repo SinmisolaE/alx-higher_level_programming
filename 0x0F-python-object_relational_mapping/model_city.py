@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 """ defines class City
-    """
+"""
 from model_state import Base
-form sqlalchemy import Column, Integer, String, ForeignKey
+from sqlalchemy import Column, Integer, String, ForeignKey
 from sqlalchemy.ext.declarative import declarative_base
 
 
