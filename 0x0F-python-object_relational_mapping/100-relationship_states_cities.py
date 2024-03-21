@@ -3,8 +3,8 @@
     City San Francisco from the database hbtn_0e_100_usa"""
 from sqlalchemy import (create_engine)
 from sqlalchemy.orm import sessionmaker
-from models.state import State, Base
-from models.city import City
+from relationship.state import State, Base
+from relationship.city import City
 import sys
 
 if __name__ == '__main__':
