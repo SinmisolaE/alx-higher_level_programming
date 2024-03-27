@@ -1,9 +1,11 @@
 #!/usr/bin/python3
-""" lists all State objects that contain letter a"""
+"""lists all State objects, and corresponding City objects
+    contained in the database hbtn_0e_101_usa"""
 import sys
-from sqlalchemy import (create_engine)
-from model_state import Base, State
+from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
+from relationship_state import State, Base
+from relationship_city import City
 
 if __name__ == '__main__':
     engine = create_engine('mysql+mysqldb://{}:{}@localhost:3306/{}'
@@ -11,5 +13,7 @@ if __name__ == '__main__':
     Base.metadata.create_all(engine)
     Session = sessionmaker(bind=engine)
     session = Session()
-    for ins in session.query(State).filter(State.name.like('%a%')):
+    for ins in session.query(State).order_by(State.id):
         print("{}: {}".format(ins.id, ins.name))
+        for ins_city in ins.cities:
+            print("    {}: {}".format(ins_city.id, ins_city.name))
