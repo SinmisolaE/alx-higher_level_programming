@@ -9,7 +9,7 @@ request.get(url, function (err, response, body) {
     console.log(err);
   } else {
     const content = JSON.parse(body);
-    content.characters.forEach((character) => {
+    for (const character of content.characters){
       request.get(character, function (error, resp, body1) {
         if (error) {
           console.log(error);
@@ -18,6 +18,6 @@ request.get(url, function (err, response, body) {
           console.log(cont.name);
         }
       });
-    });
+    }
   }
 });
